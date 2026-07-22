@@ -4,12 +4,12 @@ import BuyoutResults from "./BuyoutResults";
 import { calculateBuyout, calculatePayment } from "./LoanMath";
 
 export default function App() {
-  const [homeValue, setHomeValue] = useState(450000);
-  const [currentBalance, setCurrentBalance] = useState(250000);
+  const [homeValue, setHomeValue] = useState();
+  const [currentBalance, setCurrentBalance] = useState();
   const [splitPercentage, setSplitPercentage] = useState(50);
-  const [newRate, setNewRate] = useState(6.5);
+  const [newRate, setNewRate] = useState();
   const [loanTerm, setLoanTerm] = useState(360);
-  const [closingCosts, setClosingCosts] = useState(3500);
+  const [closingCosts, setClosingCosts] = useState();
 
   const buyoutAmount = calculateBuyout(
     homeValue,
